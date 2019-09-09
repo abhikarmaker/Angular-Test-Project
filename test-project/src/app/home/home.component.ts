@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { Employee } from "../models/employee";
+import { User } from "../models/user";
 
 @Component({
   selector: "app-home",
@@ -8,6 +9,7 @@ import { Employee } from "../models/employee";
 })
 export class HomeComponent implements OnInit {
   employeeData: Employee[] = [];
+  userData: User[] = [];
   constructor() {}
 
   ngOnInit() {
